@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "app",
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "typeRoots": ["node_modules/@types"],
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/**.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "hapi-ts-srater",
+  "version": "1.0.0",
+  "main": "app/index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=11.10.0"
+  },
+  "scripts": {
+    "build": "yarn run clear && tsc",
+    "clear": "rm -rf ./app",
+    "start": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts",
+    "test": "jest",
+    "lint": "tslint -p tsconfig.json -c tslint.json"
+  },
+  "dependencies": {
+    "bluebird": "3.x.x",
+    "debug": "4.x.x",
+    "dotenv": "6.x.x",
+    "handlebars": "4.x.x",
+    "hapi": "18.x.x",
+    "hapi-auth-cookie": "9.x.x",
+    "hapi-pino": "5.x.x",
+    "hapi-view-context": "5.x.x",
+    "inert": "5.x.x",
+    "joi": "14.x.x",
+    "mongoose": "5.x.x",
+    "uuid": "3.x.x",
+    "vision": "5.x.x",
+    "yar": "9.x.x"
+  },
+  "devDependencies": {
+    "@types/dotenv": "6.x.x",
+    "@types/fs-extra": "5.x.x",
+    "@types/hapi": "18.x.x",
+    "@types/jest": "22.x.x",
+    "@types/joi": "13.x.x",
+    "@types/mongoose": "5.x.x",
+    "@types/node": "11.x.x",
+    "jest": "22.x.x",
+    "nodemon": "1.x.x",
+    "ts-jest": "23.x.x",
+    "tslint": "5.x.x",
+    "typescript": "3.x.x"
+  }
+}
